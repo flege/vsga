@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="style/bootstrap.min.css">
+        <link rel="stylesheet" href="style/style.css">
+
+        <title>Sidebar</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Header</h3>
+                </div>
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#menu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Menu</a>
+                        <ul class="collapse list-unstyled" id="menu">
+                            <li>
+                                <a href="#">Menu 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Menu 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Menu 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="content">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info">
+                            <i class="fas fa-align-left"></i>
+                            <span>Toggle Sidebar</span>
+                        </button>
+                    </div>
+                </nav>
+                
+                <!-- isi konten disini -->
+                <img src="images/nama.png" alt="ini gambar apa">
+                
+            </div>
+        </div>
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="script/jquery-3.3.1.slim.min.js"></script>
+        <script src="script/popper.min.js"></script>
+        <script src="script/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
+    </body>
+</html>
